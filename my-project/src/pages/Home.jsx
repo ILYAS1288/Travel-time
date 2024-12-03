@@ -4,15 +4,15 @@ const Home = () => {
   return (
     <main>
 <div className="bg-cover bg-center h-96 sm:h-[400px] md:h-[500px] lg:h-[600px]" style={{ backgroundImage: "url('../../public/photos/3023.jpg')" }}>
-  <h1 className="text-center text-white text-3xl  md:text-4xl lg:text-5xl font-bold pt-24 sm:pt-12 px-4">
-    EXPLORE BEAUTIFUL WORLD!
+  <h1 className="text-center text-black text-3xl  md:text-4xl lg:text-5xl font-bold pt-24 sm:pt-12 px-4">
+    EXPLORE <span className='text-white'>BEAUTIFULL</span> WORLD!
   </h1>
-  <p className="text-center text-white text-lg sm:text-sm md:text-lg lg:text-xl mt-4 px-4 ">
+  <p className="text-center text-white text-lg sm:text-sm md:text-lg lg:text-xl lg:mt-11 px-4 ">
     Baltistan, nestled in the Karakoram Range, is a stunning paradise with towering peaks, <br />
     serene valleys, and crystal-clear lakes. 
   </p>
 
-  <div className="flex justify-center space-x-4 mt-6 px-4">
+  <div className="flex justify-center lg:mt-11 space-x-4 mt-6 px-4">
     <button className="bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-700 focus:outline-none">
       BOOK NOW
     </button>
@@ -40,7 +40,7 @@ const Home = () => {
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6">
     {/* First Card */}
     <div className="bg-white rounded-lg shadow-lg p-4">
-      <img src="../../public/photos/dsaf.png" alt="Beach" className="w-full h-40 object-cover rounded-lg mb-4" />
+      <img src="../../public/photos/G.jpg" alt="Beach" className="w-full h-40 object-cover rounded-lg mb-4" />
       <h1 className=" text-xl sm:text-2xl font-semibold">GILGIT</h1>
       <div className="flex items-center space-x-2 mt-4">
         {/* Location Icon */}
@@ -55,7 +55,7 @@ const Home = () => {
 
     {/* Second Card */}
     <div className="bg-white rounded-lg shadow-lg p-4">
-      <img src="../../public/photos/dsaf.png" alt="Mountain" className="w-full h-40 object-cover rounded-lg mb-4" />
+      <img src="../../public/photos/h.png" alt="Mountain" className="w-full h-40 object-cover rounded-lg mb-4" />
       <h1 className=" text-xl sm:text-2xl font-semibold">HUNZA</h1>
       <div className="flex items-center space-x-2 mt-4">
         {/* Location Icon */}
@@ -70,7 +70,7 @@ const Home = () => {
 
     {/* Third Card */}
     <div className="bg-white rounded-lg shadow-lg p-4">
-      <img src="../../public/photos/dsaf.png" alt="Waterfall" className="w-full h-40 object-cover rounded-lg mb-4" />
+      <img src="../../public/photos/s.png" alt="Waterfall" className="w-full h-40 object-cover rounded-lg mb-4" />
       <h1 className=" text-xl sm:text-2xl font-semibold">SKARDU</h1>
       <div className="flex items-center space-x-2 mt-4">
         {/* Location Icon */}
