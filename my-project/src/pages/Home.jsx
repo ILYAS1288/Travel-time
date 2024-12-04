@@ -86,11 +86,11 @@ const Home = () => {
       </div>
       {/* 3rd div main  */}
 
-      <div className="flex flex-col md:flex-row items-center justify-between px-4 py-8">
+      <div className="flex flex-col md:flex-row  justify-between px-12 py-8">
         {/* Image Section */}
-        <div className="bg-blue-400  shadow-md rounded-lg overflow-hidden">
-      <div className="relative">
-      <div className="flex items-center space-x-2 mb-4">
+        <div className="bg-blue-400  shadow-md rounded-full overflow-hidden">
+      <div className="relative py-4">
+      <div className="flex  justify-center  ">
           <img src="https://via.placeholder.com/40" alt="Avatar" className="w-8 h-8 rounded-full" />
           <img src="https://via.placeholder.com/40" alt="Avatar" className="w-8 h-8 rounded-full" />
           <img src="https://via.placeholder.com/40" alt="Avatar" className="w-8 h-8 rounded-full" />
@@ -98,16 +98,11 @@ const Home = () => {
           <img src="https://via.placeholder.com/40" alt="Avatar" className="w-8 h-8 rounded-full" />
         </div>
         <img src="../../public/photos/F.png" alt="World of the best agency" className="w-full h-48 object-cover" />
-      
-      </div>
-      <div className="p-4">
-      <h3 className="text-lg font-bold mb-2 flex items-center">
+        <h3 className="  flex items-end text-sm pl-12">
   <i className="fas fa-star text-yellow-500 mr-2"></i> World of the best agency
 </h3> 
-      
-        
-        
       </div>
+     
     </div>
 
 
@@ -117,7 +112,7 @@ const Home = () => {
             Explore all corners of <br /> The world with us
           </h1>
           <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-8">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit ducimus, esse provident, minima nemo amet rem quae quam molestias reiciendis tenetur ipsam, fuga quisquam debitis neque excepturi animi iusto a?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit ducimus, esse provident, minima nemo amet rem quae quam molestias reiciendis tenetur ipsam, fuga quisquam debitis neque excepturi animi iusto.
           </p>
 
           {/* Icons Section */}
