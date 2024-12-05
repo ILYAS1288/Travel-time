@@ -106,6 +106,8 @@ const Home = () => {
     </div>
 
 
+
+
         {/* Text Section */}
         <div className="text-center md:text-left md:w-1/2">
           <h1 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-4">
