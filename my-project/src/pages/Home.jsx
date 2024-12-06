@@ -21,6 +21,13 @@ const Home = () => {
   }
 
  
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const email = event.target.email.value;
+    console.log("Submitted Email:", email);
+    // Add your API call or form submission logic here
+  };
+
 
   return (
     <main>
@@ -361,9 +368,32 @@ const Home = () => {
   <h2 className='text-center text-4xl mt-8 mb-9 text-blue-500 font-bold'>
    Sign up to our newsletter
   </h2>
-  <div>
-    
-  </div>
+  {/* /email button */}
+
+
+
+  <div className="flex justify-center items-center mb-9">
+  <form 
+    onSubmit={handleSubmit} 
+    className="flex flex-col sm:flex-row items-center gap-4"
+  >
+    <input
+      type="email"
+      id="email"
+      name="email"
+      className="w-full sm:w-auto px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"
+      placeholder="you@example.com"
+      required
+    />
+    <button
+      type="submit"
+      className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors"
+    >
+      Submit
+    </button>
+  </form>
+</div>
+
 </div>
 
     </main>
