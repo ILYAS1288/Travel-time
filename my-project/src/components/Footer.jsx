@@ -7,6 +7,7 @@ const Footer = () => {
         <h1 className="text-3xl md:text-4xl font-bold italic mb-2">
           Travel <span className="text-yellow-400">Time</span>
         </h1>
+        
         <p className="text-sm md:text-base text-gray-300">
           Discover the world, one adventure at a time.
         </p>
