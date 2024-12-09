@@ -18,6 +18,7 @@ const Header = () => {
           <Link to="/about" className="text-black hover:text-gray-300">About Us</Link>
         </div>
 
+
         {/* Mobile menu (hamburger icon) */}
         <div className="md:hidden flex items-center">
           <button className="text-black">
