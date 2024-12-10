@@ -253,11 +253,13 @@ const Home = () => {
           <p className="text-black text-4xl">Cities</p>
         </div>
 
+
         {/* Card 2 */}
         <div className="bg-white p-6 rounded-lg shadow-lg">
           <h1 className="text-4xl text-blue-600 font-semibold mb-4">700+</h1>
           <p className="text-black text-4xl"> Places</p>
         </div>
+
 
         {/* Card 3 */}
         <div className="bg-white p-6 rounded-lg shadow-lg">
