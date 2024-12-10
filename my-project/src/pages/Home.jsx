@@ -1,4 +1,4 @@
-
+import { useNavigate } from "react-router-dom";
 import React, { useState } from 'react';
 const Home = () => {
 
@@ -28,7 +28,7 @@ const Home = () => {
     // Add your API call or form submission logic here
   };
 
-
+  const navigate = useNavigate();
   return (
     <main>
       <div className="bg-cover bg-center h-96 sm:h-[400px] md:h-[500px] lg:h-[600px]" style={{ backgroundImage: "url('../../public/photos/3023.jpg')" }}>
@@ -41,12 +41,19 @@ const Home = () => {
         </p>
 
         <div className="flex justify-center lg:mt-11 space-x-4 mt-6 px-4">
-          <button className="bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-700 focus:outline-none">
-            BOOK NOW
-          </button>
-          <button className="bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-700 focus:outline-none">
-            CHECK SCHEDULE
-          </button>
+        <button
+      className="bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-700 focus:outline-none"
+      onClick={() => navigate("/bookpage")}
+    >
+      BOOK NOW
+    </button>
+
+      <button
+      className="bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-700 focus:outline-none"
+      onClick={() => (window.location.href = "/check-schedule")}
+    >
+      CHECK SCHEDULE
+    </button>
         </div>
       </div>
 
@@ -114,12 +121,12 @@ const Home = () => {
       </div>
       {/* 3rd div main  */}
 
-      <div className="flex flex-col md:flex-row  justify-between px-12 py-8">
+      <div className="flex flex-col md:flex-row  justify-between px-12 py-6">
         {/* Image Section */}
         <div className="bg-blue-400 shadow-md rounded-full overflow-hidden">
   <div className="relative py-4">
     {/* Avatar section */}
-    <div className="flex justify-center space-x-2 mb-4">
+    <div className="flex justify-center  mb-2">
       <img src="https://via.placeholder.com/40" alt="Avatar" className="w-8 h-8 rounded-full" />
       <img src="https://via.placeholder.com/40" alt="Avatar" className="w-8 h-8 rounded-full" />
       <img src="https://via.placeholder.com/40" alt="Avatar" className="w-8 h-8 rounded-full" />
@@ -135,8 +142,8 @@ const Home = () => {
     />
 
     {/* Text Section */}
-    <h3 className="flex items-end text-sm pl-12 md:pl-16 lg:pl-20">
-      <i className="fas fa-star text-yellow-500 mr-2"></i> World of the best agency
+    <h3 className="flex items-start text-sm pl-4 md:pl-8 lg:pl-12">
+      <i className="fas fa-star text-yellow-500 mr-2"></i> World of  the best agency
     </h3>
   </div>
 </div>
