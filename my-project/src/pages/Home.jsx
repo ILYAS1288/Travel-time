@@ -1,5 +1,12 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate ,Link } from "react-router-dom";
 import React, { useState } from 'react';
+
+
+
+
+
+
+
 const Home = () => {
 
   const [isOpen, setIsOpen] = useState(false);
@@ -68,7 +75,9 @@ const Home = () => {
           <h1 className="text-sm sm:text-base md:text-lg font-semibold m-2">MOUNTAIN</h1>
           <h1 className="text-sm sm:text-base md:text-lg font-semibold m-2">WATER FALL</h1>
           <h1 className="text-sm sm:text-base md:text-lg font-semibold m-2">ICEBERGS</h1>
-          <h1 className="text-sm sm:text-base md:text-lg font-semibold m-2">VIEW ALL</h1>
+          <Link to="/view-all" className="text-blue-500 hover:underline">
+        VIEW ALL
+      </Link>
         </div>
 
         {/* Cards with images */}
@@ -124,14 +133,14 @@ const Home = () => {
       <div className="flex flex-col md:flex-row  justify-between px-12 py-6">
         {/* Image Section */}
         <div className="bg-blue-400 shadow-md rounded-full overflow-hidden">
-  <div className="relative py-4">
+  <div className="relative py-2">
     {/* Avatar section */}
     <div className="flex justify-center  mb-2">
-      <img src="https://via.placeholder.com/40" alt="Avatar" className="w-8 h-8 rounded-full" />
-      <img src="https://via.placeholder.com/40" alt="Avatar" className="w-8 h-8 rounded-full" />
-      <img src="https://via.placeholder.com/40" alt="Avatar" className="w-8 h-8 rounded-full" />
-      <img src="https://via.placeholder.com/40" alt="Avatar" className="w-8 h-8 rounded-full" />
-      <img src="https://via.placeholder.com/40" alt="Avatar" className="w-8 h-8 rounded-full" />
+      <img src="../../public/photos/chef.jpg" alt="Avatar" className="w-8 h-8 rounded-full" />
+      <img src="../../public/photos/chef.jpg" alt="Avatar" className="w-8 h-8 rounded-full" />
+      <img src="../../public/photos/chef.jpg" alt="Avatar" className="w-8 h-8 rounded-full" />
+      <img src="../../public/photos/chef.jpg" alt="Avatar" className="w-8 h-8 rounded-full" />
+      <img src="../../public/photos/chef.jpg" alt="Avatar" className="w-8 h-8 rounded-full" />
     </div>
 
     {/* Image Section */}
@@ -197,7 +206,11 @@ const Home = () => {
           <h1 className="text-sm sm:text-base md:text-lg font-semibold m-2">MOUNTAIN</h1>
           <h1 className="text-sm sm:text-base md:text-lg font-semibold m-2">WATER FALL</h1>
           <h1 className="text-sm sm:text-base md:text-lg font-semibold m-2">ICEBERGS</h1>
-          <h1 className="text-sm sm:text-base md:text-lg font-semibold m-2">VIEW ALL</h1>
+          <h1 className="text-sm sm:text-base md:text-lg font-semibold m-2">
+      <Link to="/view-all" className="text-blue-500 hover:underline">
+        VIEW ALL
+      </Link>
+    </h1>
         </div>
 
         {/* Cards with images */}
