@@ -27,6 +27,26 @@ const Home = () => {
     setIsOpen2(!isOpen2);
   }
 
+
+  const [isOpen12, setIsOpen12] = useState(false);
+
+  const toggleSpan12 = () => {
+    setIsOpen12(!isOpen12);
+  }
+
+
+// button usestate 
+const [isSubmitted, setIsSubmitted] = useState(false);
+
+const handleSubmit1 = (e) => {
+  e.preventDefault(); // Prevents the form from refreshing the page
+  setIsSubmitted(true); // Show the success message
+  setTimeout(() => {
+    setIsSubmitted(false); // Hide the message after 3 seconds
+  }, 3000);
+};
+
+
  
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -298,7 +318,11 @@ const Home = () => {
 <div className="bg-blue-200 p-6">
   <div className="flex justify-between items-center mb-6">
     <h4 className="text-lg font-bold">OUR GALLERY</h4>
-    <p className="text-blue-600 cursor-pointer">VIEW ALL</p>
+    <h1 className="text-sm sm:text-base md:text-lg font-semibold m-2">
+      <Link to="/view-all" className="text-blue-500 hover:underline">
+        VIEW ALL
+      </Link>
+    </h1>
   </div>
 
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -324,13 +348,13 @@ const Home = () => {
   <div className="p-4 text-center mx-auto my-4 rounded-3xl border border-gray-400 max-w-xl w-full">
     <p 
       className="text-xl font-semibold text-blue-600 cursor-pointer" 
-      onClick={toggleSpan}
+      onClick={toggleSpan12}
     >
       Why do dreams sometimes feel so vivid, yet slip away from memory so quickly upon 
       waking? <i className="fa-solid fa-angle-down ml-4"></i>
     </p>
     
-    {isOpen && (
+    {isOpen12 && (
       <span className="block mt-4 text-black">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta repellat nisi vel pariatur nemo molestias aspernatur,<br /> velit eos beatae temporibus Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eos sunt, doloribus fuga odio tenetur.
       </span>
@@ -394,27 +418,32 @@ const Home = () => {
 
 
 
-  <div className="flex justify-center items-center mb-9">
-  <form 
-    onSubmit={handleSubmit} 
-    className="flex flex-col sm:flex-row items-center gap-4"
-  >
-    <input
-      type="email"
-      id="email"
-      name="email"
-      className="w-full sm:w-auto px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"
-      placeholder="you@example.com"
-      required
-    />
-    <button
-      type="submit"
-      className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors"
-    >
-      Submit
-    </button>
-  </form>
-</div>
+  <div className="flex flex-col justify-center items-center mb-9">
+      <form
+        onSubmit={handleSubmit1}
+        className="flex flex-col sm:flex-row items-center gap-4"
+      >
+        <input
+          type="email"
+          id="email"
+          name="email"
+          className="w-full sm:w-auto px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"
+          placeholder="Enter your email"
+          required
+        />
+        <button
+          type="submit"
+          className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors"
+        >
+          Submit
+        </button>
+      </form>
+      {isSubmitted && (
+        <p className="mt-4 text-green-600 text-lg font-semibold">
+           Your have  Success submit the email
+        </p>
+      )}
+    </div>
 
 </div>
 
