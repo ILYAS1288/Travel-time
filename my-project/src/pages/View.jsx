@@ -29,8 +29,11 @@ const View = () => {
   return (
     <div className="bg-gray-50 min-h-screen flex flex-col items-center py-10">
       <h1 className="text-4xl font-bold text-gray-700 mb-6">Gallery</h1>
-      <p className="text-lg text-gray-600 mb-8 text-center max-w-2xl">
+      <p className="text-lg text-gray-600 mb-4 text-center max-w-2xl">
         Explore our collection of beautiful images. Enjoy a responsive gallery layout that adapts to any screen size.
+      </p>
+      <p className="text-lg text-gray-600 mb-8 text-center max-w-2xl">
+        Gilgit-Baltistan, often referred to as the jewel of Pakistan, is renowned for its breathtaking landscapes, snow-capped mountains, and vibrant culture. Home to the world's highest peaks, lush valleys, and serene lakes, it is a paradise for nature enthusiasts and adventure seekers alike. Discover the captivating charm of this region through our gallery.
       </p>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 w-full max-w-6xl px-4">
         {images.map((image, index) => (
