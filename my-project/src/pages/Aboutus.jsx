@@ -8,9 +8,11 @@ const AboutUs = () => {
         <div className="text-center mb-10">
           <h1 className="text-4xl font-bold text-blue-600 mb-4">
             About Us
+
           </h1>
           <p className="text-gray-600 text-lg">
             We are passionate travelers dedicated to helping you discover the world’s most beautiful destinations.
+            
           </p>
         </div>
 
