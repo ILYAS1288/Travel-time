@@ -150,32 +150,33 @@ const handleSubmit1 = (e) => {
       </div>
       {/* 3rd div main  */}
 
-      <div className="flex flex-col md:flex-row  justify-between px-12 py-6">
+      <div className="flex flex-col md:flex-row  justify-between px-10 py-6">
         {/* Image Section */}
-        <div className="bg-blue-400 shadow-md rounded-full overflow-hidden">
-  <div className="relative py-2">
-    {/* Avatar section */}
-    <div className="flex justify-center  mb-2">
-      <img src="../../public/photos/chef.jpg" alt="Avatar" className="w-8 h-8 rounded-full" />
-      <img src="../../public/photos/chef.jpg" alt="Avatar" className="w-8 h-8 rounded-full" />
-      <img src="../../public/photos/chef.jpg" alt="Avatar" className="w-8 h-8 rounded-full" />
-      <img src="../../public/photos/chef.jpg" alt="Avatar" className="w-8 h-8 rounded-full" />
-      <img src="../../public/photos/chef.jpg" alt="Avatar" className="w-8 h-8 rounded-full" />
+        <div className="bg-blue-400 shadow-md rounded-full overflow-hidden max-w-sm md:max-w-md lg:max-w-lg mx-auto">
+  <div className="relative py-4 px-4 md:py-6 md:px-6">
+    {/* Avatar Section */}
+    <div className="flex justify-center  mb-4">
+      <img src="../../public/photos/chef.jpg" alt="Avatar" className="w-10 h-10 rounded-full md:w-12 md:h-12 lg:w-14 lg:h-14" />
+      <img src="../../public/photos/chef.jpg" alt="Avatar" className="w-10 h-10 rounded-full md:w-12 md:h-12 lg:w-14 lg:h-14" />
+      <img src="../../public/photos/chef.jpg" alt="Avatar" className="w-10 h-10 rounded-full md:w-12 md:h-12 lg:w-14 lg:h-14" />
+      <img src="../../public/photos/chef.jpg" alt="Avatar" className="w-10 h-10 rounded-full md:w-12 md:h-12 lg:w-14 lg:h-14" />
+      <img src="../../public/photos/chef.jpg" alt="Avatar" className="w-10 h-10 rounded-full md:w-12 md:h-12 lg:w-14 lg:h-14" />
     </div>
 
     {/* Image Section */}
     <img
       src="../../public/photos/F.png"
       alt="World of the best agency"
-      className="w-full h-48 object-cover mb-4"
+      className="w-full h-36 md:h-48 lg:h-56 object-cover mb-4"
     />
 
     {/* Text Section */}
-    <h3 className="flex items-start text-sm pl-4 md:pl-8 lg:pl-12">
-      <i className="fas fa-star text-yellow-500 mr-2"></i> World of  the best agency
+    <h3 className="flex  justify-center text-sm md:text-base lg:text-lg px-2 md:px-4 lg:px-6">
+      <i className="fas fa-star text-yellow-500 "></i> World of the  best agency
     </h3>
   </div>
 </div>
+
 
 
 
