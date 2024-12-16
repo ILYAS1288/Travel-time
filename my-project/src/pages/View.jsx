@@ -68,6 +68,17 @@ const View = () => {
           </div>
         </div>
       )}
+
+      <div className="mt-12 text-center px-4 max-w-4xl">
+        <h2 className="text-2xl font-bold text-gray-700 mb-4">Famous Viewpoints</h2>
+        <p className="text-lg text-gray-600">
+          Gilgit-Baltistan offers a multitude of famous viewpoints that leave visitors in awe. The majestic Hunza Valley, with its
+          panoramic views of Rakaposhi and Ultar Sar peaks, is a favorite among travelers. Skardu's Shangrila Resort and Satpara Lake
+          provide tranquil yet stunning landscapes, while Deosai National Park, known as the "Land of Giants," mesmerizes with its
+          vast plateaus and rich biodiversity. Whether it's the enchanting Fairy Meadows under the shadow of Nanga Parbat or the
+          serene beauty of Attabad Lake, these iconic spots offer an unforgettable glimpse into the splendor of nature.
+        </p>
+      </div>
     </div>
   );
 };
