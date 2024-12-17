@@ -79,6 +79,7 @@ const View = () => {
           serene beauty of Attabad Lake, these iconic spots offer an unforgettable glimpse into the splendor of nature.
         </p>
       </div>
+      
     </div>
   );
 };
