@@ -2,10 +2,22 @@ import React from "react";
 
 const Category = () => {
   const categories = [
-    { name: "Beaches", image: "https://plus.unsplash.com/premium_photo-1723575880167-1b2c0925c921?q=80&w=1716&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+    {
+      name: "Beaches",
+      image:
+        "https://plus.unsplash.com/premium_photo-1723575880167-1b2c0925c921?q=80&w=1716&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
     { name: "Mountains", image: "../../public/photos/be.png" },
-    { name: "Cities", image: "https://plus.unsplash.com/premium_photo-1675314234288-75cc922c4cb2?q=80&w=1718&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-    { name: "Historical Sites", image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/72/a4/73/chaqchan-mosque.jpg?w=900&h=500&s=1" },
+    {
+      name: "Cities",
+      image:
+        "https://plus.unsplash.com/premium_photo-1675314234288-75cc922c4cb2?q=80&w=1718&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      name: "Historical Sites",
+      image:
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/72/a4/73/chaqchan-mosque.jpg?w=900&h=500&s=1",
+    },
   ];
 
   return (
@@ -16,7 +28,8 @@ const Category = () => {
           Explore Travel Categories
         </h1>
         <p className="text-center text-gray-600 mb-10">
-          Find your next adventure! Discover breathtaking destinations by category.
+          Find your next adventure! Discover breathtaking destinations by
+          category.
         </p>
 
         {/* Categories Grid */}
@@ -39,6 +52,11 @@ const Category = () => {
             </div>
           ))}
         </div>
+
+        {/* Baltistan Info */}
+        <p className="text-center text-gray-700 mt-12">
+          Discover the majestic beauty of <span className="font-semibold">Baltistan</span>, where mountains touch the skies and history whispers from every corner. Experience its rich culture, breathtaking landscapes, and warm hospitality.
+        </p>
       </div>
     </div>
   );
